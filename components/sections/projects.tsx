@@ -50,7 +50,7 @@ export function Projects() {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <h2 className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
+          <h2 className="bg-gradient-to-r from-red-400 to-orange-500 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
             Featured Projects
           </h2>
           <p className="mt-4 text-lg text-neutral-400">
@@ -83,7 +83,7 @@ export function Projects() {
                     {project.description}
                   </CardItem>
                   <CardItem translateZ="100" className="mt-4 w-full">
-                    <div className="relative h-48 w-full overflow-hidden rounded-lg bg-gradient-to-br from-purple-500/20 to-blue-500/20">
+                    <div className="relative h-48 w-full overflow-hidden rounded-lg bg-gradient-to-br from-red-500/20 to-orange-500/20">
                       <div className="flex h-full items-center justify-center text-neutral-500">
                         Project Preview
                       </div>
@@ -106,7 +106,7 @@ export function Projects() {
                         <CardItem
                           translateZ={20}
                           as="button"
-                          className="rounded-lg bg-gradient-to-r from-purple-500 to-blue-500 px-4 py-2 text-sm font-bold text-white"
+                          className="rounded-lg bg-gradient-to-r from-red-500 to-orange-500 px-4 py-2 text-sm font-bold text-white"
                         >
                           View Details
                         </CardItem>

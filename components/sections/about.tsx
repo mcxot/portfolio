@@ -43,7 +43,7 @@ export function About() {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <h2 className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
+          <h2 className="bg-gradient-to-r from-red-400 to-orange-500 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
             About Me
           </h2>
           <p className="mt-4 text-lg text-neutral-400">
@@ -60,9 +60,9 @@ export function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="group h-full border-neutral-800 bg-neutral-900/50 backdrop-blur-sm transition-all hover:border-purple-500/50 hover:bg-neutral-900">
+              <Card className="group h-full border-neutral-800 bg-neutral-900/50 backdrop-blur-sm transition-all hover:border-red-500/50 hover:bg-neutral-900">
                 <CardHeader>
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-purple-500 to-blue-500">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-red-500 to-orange-500">
                     <skill.icon className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle className="text-xl text-white">{skill.title}</CardTitle>

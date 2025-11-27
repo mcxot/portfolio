@@ -43,7 +43,7 @@ export function Navigation() {
             className="text-xl font-bold text-white"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-red-400 to-orange-500 bg-clip-text text-transparent">
               Portfolio
             </span>
           </motion.a>
@@ -63,7 +63,7 @@ export function Navigation() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="rounded-full bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-2 text-sm font-semibold text-white"
+              className="rounded-full bg-gradient-to-r from-red-500 to-orange-500 px-6 py-2 text-sm font-semibold text-white"
             >
               Hire Me
             </motion.button>
@@ -102,7 +102,7 @@ export function Navigation() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="rounded-full bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-3 text-lg font-semibold text-white"
+              className="rounded-full bg-gradient-to-r from-red-500 to-orange-500 px-8 py-3 text-lg font-semibold text-white"
             >
               Hire Me
             </motion.button>

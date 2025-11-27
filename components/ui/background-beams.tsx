@@ -66,10 +66,10 @@ export const BackgroundBeams = ({ className }: { className?: string }) => {
                 delay: gradientConfigs[index].delay,
               }}
             >
-              <stop stopColor="#8b5cf6" stopOpacity="0"></stop>
-              <stop stopColor="#8b5cf6"></stop>
-              <stop offset="32.5%" stopColor="#3b82f6"></stop>
-              <stop offset="100%" stopColor="#3b82f6" stopOpacity="0"></stop>
+              <stop stopColor="#ef4444" stopOpacity="0"></stop>
+              <stop stopColor="#ef4444"></stop>
+              <stop offset="32.5%" stopColor="#f97316"></stop>
+              <stop offset="100%" stopColor="#f97316" stopOpacity="0"></stop>
             </motion.linearGradient>
           ))}
         </defs>
