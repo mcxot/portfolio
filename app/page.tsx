@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </main>
       <footer className="border-t border-neutral-800 bg-black py-8 text-center text-sm text-neutral-400">
-        <p>© 2024 Portfolio. All rights reserved.</p>
+        <p>© 2024 DE Studios. All rights reserved.</p>
       </footer>
     </div>
   );

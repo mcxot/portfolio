@@ -65,7 +65,7 @@ export function Services() {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <h2 className="bg-gradient-to-r from-red-400 to-orange-500 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
+          <h2 className="bg-gradient-to-r from-rose-400 to-amber-500 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
             Services
           </h2>
           <p className="mt-4 text-lg text-neutral-400">
@@ -79,7 +79,7 @@ export function Services() {
               <TabsTrigger
                 key={service.id}
                 value={service.id}
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-red-500 data-[state=active]:to-orange-500"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-rose-500 data-[state=active]:to-amber-500"
               >
                 {service.label}
               </TabsTrigger>
@@ -104,7 +104,7 @@ export function Services() {
                           {service.description}
                         </CardDescription>
                       </div>
-                      <Badge className="bg-gradient-to-r from-red-500 to-orange-500 text-white">
+                      <Badge className="bg-gradient-to-r from-rose-500 to-amber-500 text-white">
                         {service.price}
                       </Badge>
                     </div>
@@ -116,7 +116,7 @@ export function Services() {
                           key={feature}
                           className="flex items-center gap-3 rounded-lg bg-neutral-800/50 p-3"
                         >
-                          <div className="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-r from-red-500 to-orange-500">
+                          <div className="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-r from-rose-500 to-amber-500">
                             <Check className="h-4 w-4 text-white" />
                           </div>
                           <span className="text-sm text-neutral-300">{feature}</span>
@@ -127,7 +127,7 @@ export function Services() {
                       <motion.button
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className="w-full rounded-lg bg-gradient-to-r from-red-500 to-orange-500 px-6 py-3 font-semibold text-white transition-all hover:shadow-lg hover:shadow-red-500/50"
+                        className="w-full rounded-lg bg-gradient-to-r from-rose-500 to-amber-500 px-6 py-3 font-semibold text-white transition-all hover:shadow-lg hover:shadow-rose-500/50"
                       >
                         Get Started
                       </motion.button>

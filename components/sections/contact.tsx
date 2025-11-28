@@ -6,14 +6,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { icon: Mail, href: "mailto:hello@destudios.com", label: "Email" },
+  { icon: MessageCircle, href: "https://wa.me/1234567890", label: "WhatsApp" },
 ];
 
 export function Contact() {
@@ -41,7 +39,7 @@ export function Contact() {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <h2 className="bg-gradient-to-r from-red-400 to-orange-500 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
+          <h2 className="bg-gradient-to-r from-rose-400 to-amber-500 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
             Get In Touch
           </h2>
           <p className="mt-4 text-lg text-neutral-400">
@@ -65,7 +63,7 @@ export function Contact() {
                   id="name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="border-neutral-700 bg-neutral-900/50 text-white backdrop-blur-sm focus:border-red-500"
+                  className="border-neutral-700 bg-neutral-900/50 text-white backdrop-blur-sm focus:border-rose-500"
                   placeholder="Your name"
                   required
                 />
@@ -80,7 +78,7 @@ export function Contact() {
                   type="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="border-neutral-700 bg-neutral-900/50 text-white backdrop-blur-sm focus:border-red-500"
+                  className="border-neutral-700 bg-neutral-900/50 text-white backdrop-blur-sm focus:border-rose-500"
                   placeholder="your@email.com"
                   required
                 />
@@ -94,7 +92,7 @@ export function Contact() {
                   id="message"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="min-h-[150px] border-neutral-700 bg-neutral-900/50 text-white backdrop-blur-sm focus:border-red-500"
+                  className="min-h-[150px] border-neutral-700 bg-neutral-900/50 text-white backdrop-blur-sm focus:border-rose-500"
                   placeholder="Tell me about your project..."
                   required
                 />
@@ -104,7 +102,7 @@ export function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full rounded-lg bg-gradient-to-r from-red-500 to-orange-500 px-6 py-3 font-semibold text-white transition-all hover:shadow-lg hover:shadow-red-500/50"
+                className="w-full rounded-lg bg-gradient-to-r from-rose-500 to-amber-500 px-6 py-3 font-semibold text-white transition-all hover:shadow-lg hover:shadow-rose-500/50"
               >
                 Send Message
               </motion.button>
@@ -129,9 +127,9 @@ export function Contact() {
                   key={social.label}
                   href={social.href}
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="flex items-center gap-3 rounded-lg border border-neutral-800 bg-neutral-900/50 p-4 backdrop-blur-sm transition-colors hover:border-red-500/50"
+                  className="flex items-center gap-3 rounded-lg border border-neutral-800 bg-neutral-900/50 p-4 backdrop-blur-sm transition-colors hover:border-rose-500/50"
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-red-500 to-orange-500">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-rose-500 to-amber-500">
                     <social.icon className="h-5 w-5 text-white" />
                   </div>
                   <span className="text-sm font-medium text-neutral-300">

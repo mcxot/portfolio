@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { Code2, Palette, Zap, Globe } from "lucide-react";
+import Image from "next/image";
 
 const skills = [
   {
@@ -43,7 +44,27 @@ export function About() {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <h2 className="bg-gradient-to-r from-red-400 to-orange-500 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
+          <div className="mb-8 flex justify-center">
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="relative"
+            >
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-rose-500 to-amber-500 blur-2xl opacity-50"></div>
+              <div className="relative h-32 w-32 overflow-hidden rounded-full border-4 border-neutral-800 bg-neutral-900">
+                <Image
+                  src="/OWNERIMAGE.jpg"
+                  alt="Profile"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </motion.div>
+          </div>
+          <h2 className="bg-gradient-to-r from-rose-400 to-amber-500 bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
             About Me
           </h2>
           <p className="mt-4 text-lg text-neutral-400">
@@ -60,9 +81,9 @@ export function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="group h-full border-neutral-800 bg-neutral-900/50 backdrop-blur-sm transition-all hover:border-red-500/50 hover:bg-neutral-900">
+              <Card className="group h-full border-neutral-800 bg-neutral-900/50 backdrop-blur-sm transition-all hover:border-rose-500/50 hover:bg-neutral-900">
                 <CardHeader>
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-red-500 to-orange-500">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-rose-500 to-amber-500">
                     <skill.icon className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle className="text-xl text-white">{skill.title}</CardTitle>

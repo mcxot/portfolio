@@ -1,6 +1,6 @@
-# Modern Dark Portfolio
+# DE Studios - Modern Dark Portfolio
 
-A premium dark mode portfolio website built with Next.js 16, featuring stunning animations and modern UI components.
+A premium dark mode portfolio website for DE Studios built with Next.js 16, featuring stunning animations and modern UI components.
 
 ## Features
 

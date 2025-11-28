@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Creative Web Designer",
-  description: "Modern portfolio showcasing web design and development projects",
+  title: "DE Studios - Creative Web Designer",
+  description: "Modern portfolio showcasing web design and development projects by DE Studios",
 };
 
 export default function RootLayout({

@@ -13,8 +13,8 @@ export function Hero() {
         className="absolute inset-0"
         gap={20}
         radius={1.5}
-        color="rgba(239, 68, 68, 0.3)"
-        glowColor="rgba(239, 68, 68, 0.6)"
+        color="rgba(244, 63, 94, 0.3)"
+        glowColor="rgba(244, 63, 94, 0.6)"
       />
       <Spotlight className="-top-40 left-0 md:-top-20 md:left-60" fill="white" />
       
